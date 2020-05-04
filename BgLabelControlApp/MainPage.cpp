@@ -25,7 +25,7 @@ namespace winrt::BgLabelControlApp::implementation
     void MainPage::ClickHandler(IInspectable const&, RoutedEventArgs const&)
     {
         myButton().Content(box_value(L"Clicked"));
-        auto peer = winrt::Windows::UI::Xaml::Automation::Peers::FrameworkElementAutomationPeer::FromElement(myButton());// as BgLabelAutomationPeer;
+        auto peer = winrt::Windows::UI::Xaml::Automation::Peers::FrameworkElementAutomationPeer::FromElement(myBgLabelControl());// as BgLabelAutomationPeer;
         if (peer != NULL) {
             myButton().Content(box_value(L"It's there man!"));
         }
