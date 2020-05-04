@@ -1,0 +1,10 @@
+// BgLabelControl.idl
+namespace BgLabelControlApp
+{
+    runtimeclass BgLabelControl : Windows.UI.Xaml.Controls.Control
+    {
+        BgLabelControl();
+        static Windows.UI.Xaml.DependencyProperty LabelProperty{ get; };
+        String Label;
+    }
+}

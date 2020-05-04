@@ -1,0 +1,11 @@
+import "BgLabelControl.idl";
+namespace BgLabelControlApp
+{
+    runtimeclass BgLabelControlAutomationPeer : Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer,
+        Windows.UI.Xaml.Automation.Provider.IInvokeProvider
+    {
+        BgLabelControlAutomationPeer(BgLabelControl owner, String label);
+        BgLabelControl Owner;
+        String Label;
+    }
+}
